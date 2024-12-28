@@ -1,0 +1,11 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  application:
+    name: tripchoice
+
+auth:
+  scheme: "Bearer"
+  header: Authorization
