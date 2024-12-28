@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Unix/Linux
+.swp
+.swo
+
+# Logs
+*.log
+
+# Environment
+# *.env
+local.properties
+
+# Dependency directories
+node_modules/
