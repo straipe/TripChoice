@@ -11,19 +11,88 @@
 -  [-] 현재 주소 기반 관광지 키워드 추천(GPT 활용)
 
 ## 📷 스크린샷  
-프로젝트의 UI 또는 실행 화면을 첨부하세요.  
-![screenshot](https://via.placeholder.com/800x400.png)
+### 1. 메인 페이지 
+<p>
+  <img src="screenshots/MainView1.PNG" width="45%" height="300px"/>
+  <img src="screenshots/MainView2.PNG" width="45%" height="300px"/>
+</p>
+<img src="screenshots/MainView3.PNG" width="45%" height="300px"/>
+<br>
+
+### 2. 관광지 지도 페이지  
+<br>
+
+__주소, 카테고리를 통한 검색__  
+<img src="screenshots/AttractionView2.PNG" width="90%"/>
+
+__1박 2일 플랜 설정__  
+<img src="screenshots/AttractionView6.PNG" width="90%"/>
+
+<br>
+  
+### 3. 인기 관광지 페이지
+<br>
+<p>
+  <img src="screenshots/HotPlaceView1.PNG" width="90%"/>
+</p>
+
+<p>
+  <img src="screenshots/HotPlaceView2.PNG" width="45%" height="300px"/>
+  <img src="screenshots/HotPlaceView3.PNG" width="45%" height="300px"/>
+</p>
+<br>
+
+### 4. 공지사항 페이지
+<br>
+
+<p>
+  <img src="screenshots/NoticeView1.PNG" width="45%" height="300px"/>
+  <img src="screenshots/NoticeView2.PNG" width="45%" height="300px"/>
+</p>
+<br>
+
+### 5. 회원 페이지
+<br>
+
+<p>
+  <img src="screenshots/LoginView.PNG" width="45%" height="300px"/>
+  <img src="screenshots/SignUpView.PNG" width="45%" height="300px"/>
+</p>
+<p>
+  <img src="screenshots/MyPageView.PNG" width="45%" height="300px"/>
+  <img src="screenshots/MyPlanView.PNG" width="45%" height="300px"/>
+</p>
+<br>
+
+### 6. 플랜 페이지
+<br>
+
+<p>
+  <img src="screenshots/MyPlanView2.PNG" width="45%" height="300px"/>
+  <img src="screenshots/OtherPlanView.PNG" width="45%" height="300px"/>
+</p>
+<br>
 
 ## 🛠 설치 및 실행 방법  
-```bash
-# 1. 저장소 클론
+
+### 공통
+
+__1. 저장소 클론__  
 git clone https://github.com/straipe/TripChoice.git
 
-# 2. 디렉토리 이동
+__2. 디렉토리 이동__  
 cd TripChoice
 
-# 3. 필요한 패키지 설치
-npm install  # 예시 (프로젝트에 맞게 수정)
+### Front-end
 
-# 4. 실행
-npm start dev # 예시 (프로젝트에 맞게 수정)
+__3. 필요한 패키지 설치__  
+npm install
+
+__4. 실행__  
+npm start dev
+
+### Back-end
+
+__5. MySQL dump 실행__  
+
+__6. Intellij로 실행__  
