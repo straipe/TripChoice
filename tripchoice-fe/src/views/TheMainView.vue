@@ -10,6 +10,7 @@ import VButton from "@/components/common/VButton.vue"
 import VToggle from "@/components/common/VToggle.vue"
 import VPageNavigation from "@/components/common/VPageNavigation.vue"
 import { listAttraction, listGuGuns, listTop4Attraction } from "@/api/attraction"
+import { listTag } from "@/api/gpt"
 import { listTop4Plan } from "@/api/plan"
 import { useAttractionStore } from "@/stores/attraction"
 import { ref, watch, onMounted } from 'vue'
@@ -26,6 +27,7 @@ const VITE_ARTICLE_LIST_SIZE = 6
 const isLoading = ref(true)
 const isLoadingTop4Attr = ref(true)
 const isLoadingTop4Plan = ref(true)
+const isLoadingTag = ref(true)
 const isChecked = ref(false)
 
 const param = ref({
@@ -39,12 +41,32 @@ const param = ref({
   size: VITE_ARTICLE_LIST_SIZE,
 })
 
+const tagList = ref(['#코엑스몰','#별마당도서관','#가로수길','#압구정로데오','#봉은사','#선릉과정릉','#청담동','#삼성동','#신사동','#역삼동','#논현동','#도산공원'])
+
 onMounted(()=>{
-  getAttractionList()
-  getTop4AttractionList()
-  getTop4PlanList()
+    getAttractionList()
+    getTop4AttractionList()
+    getTop4PlanList()
+    //getTagList()
   }
 )
+
+
+const getTagList = () =>{
+  console.log("GPT를 활용한 태그 불러오기!!!")
+  isLoadingTag.value = true
+  listTag(
+    { address: "서울 강남구", model: "gpt-4" },
+    ({ data }) => {
+      console.log(data)
+      tagList.value = data.content
+      isLoadingTag.value = false
+    },
+    (error) => {
+      console.log(error)
+    }
+  )
+}
 
 const getAttractionList = () =>{
   console.log("서버에서 관광지목록 얻어오자!!!", param.value)
@@ -208,7 +230,7 @@ const changeRadius = (val) => {
           <div class="flex flex-col">
             <WeatherTodayInfo type="Bar"></WeatherTodayInfo>
             <WeatherWeekInfo></WeatherWeekInfo>
-            <GPTTagList></GPTTagList>
+            <GPTTagList :tags="tagList"></GPTTagList>
           </div>
           <div>
             <div class="flex justify-between">
