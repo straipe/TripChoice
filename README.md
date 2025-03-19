@@ -68,8 +68,8 @@ __1박 2일 플랜 설정__
 <br>
 
 <p>
-  <img src="screenshots/MyPlanView2.PNG" width="45%" height="300px"/>
   <img src="screenshots/OtherPlanView.PNG" width="45%" height="300px"/>
+  <img src="screenshots/MyPlanView2.PNG" width="45%" height="300px"/>
 </p>
 <br>
 
