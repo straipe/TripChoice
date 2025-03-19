@@ -52,7 +52,7 @@ public class PlanFixture extends Plan {
         return PlanUpdateRequestDto.builder()
                 .title(DEFAULT_UPDATE_TITLE)
                 .summary(DEFAULT_UPDATE_SUMMARY)
-                .scheduleCreateDtos(List.of(
+                .schedules(List.of(
                         aScheduleCreateRequestDto(),
                         aScheduleCreateRequestDto()));
     }

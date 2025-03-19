@@ -17,6 +17,8 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.web.servlet.ResultActions;
 
+import java.util.Base64;
+
 import static com.ssafy12.tripchoice.fixture.BoardFixture.*;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -37,6 +39,7 @@ public class HotPlaceApiTest extends ApiTestSupport {
             // given
             ContentType contentType = contentTypeRepository.findAll().get(0);
             byte[] imageData = "sample image data".getBytes(); // 테스트용 이미지 데이터
+            String retrievedBase64 = "data:image/png;base64," + Base64.getEncoder().encodeToString(imageData);
             var request = HotPlaceCreateRequestDto.builder()
                     .title("Test Place")
                     .contentTypeId(contentType.getContentTypeId())
@@ -44,7 +47,7 @@ public class HotPlaceApiTest extends ApiTestSupport {
                     .summary("Test Summary")
                     .longitude(123.45)
                     .latitude(67.89)
-                    .image(imageData)
+                    .image(retrievedBase64)
                     .build();
             signUpAndLoginDefaultUser();
 

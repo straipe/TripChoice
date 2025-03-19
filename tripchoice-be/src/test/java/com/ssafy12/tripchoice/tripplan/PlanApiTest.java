@@ -87,7 +87,7 @@ public class PlanApiTest extends ApiTestSupport {
             var request = aPlanUpdateRequestDtoBuilder()
                     .title("updateTitle")
                     .summary("updateSummary")
-                    .scheduleCreateDtos(scheduleCreateDtos)
+                    .schedules(scheduleCreateDtos)
                     .build();
 
             // when
@@ -122,7 +122,7 @@ public class PlanApiTest extends ApiTestSupport {
                 var request = aPlanUpdateRequestDtoBuilder()
                         .title("updateTitle")
                         .summary("updateSummary")
-                        .scheduleCreateDtos(scheduleCreateDtos)
+                        .schedules(scheduleCreateDtos)
                         .build();
 
                 // when
