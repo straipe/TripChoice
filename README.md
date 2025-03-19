@@ -73,6 +73,48 @@ __1박 2일 플랜 설정__
 </p>
 <br>
 
+## ⏳ 개발 기간
+
+__기본 기능__  
+24.11.14 ~ 24.12.24 (6주)  
+<br>
+
+__추가 기능__  
+GPT 태그 기능:  24.12.25 ~ 24.12.28  
+날씨 조회 기능: 25.03.17 ~ 25.03.19 
+<br>  
+
+## 💻 기술 스텍
+
+<div> 
+  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+  <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+  <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
+</div>
+<br>
+
+## 💻 새로 배운 기술
+
+__Back-End__
+- SpringBoot, JPA를 활용한 CRUD 기능 구현
+- Spring Sequrity, jwt를 활용한 로그인, 인가(Admin, User) 기능 구현
+- QueryDSL을 활용해 관광지 검색 조건 구현(주소, 거리, 카테고리 등 여러 조건을 동적으로 추가)
+- 공공 데이터 API를 활용한 날씨 데이터(XML) 수집 및 전처리(DocumentBuilder)
+- GPT를 활용한 태그 추천 기능 구현
+<br>
+
+__Front-End__
+- Vue 컴포넌트 설계 및 구현
+- Tailwind를 활용한 UI 디자인
+- axios를 활용한 server 통신
+- Vue와 연관된 기술(router, pinia) 습득 및 활용
+- KakaoMap API를 활용한 플랜 경로 시각화
+<br>
+
 ## 🛠 설치 및 실행 방법  
 
 ### 공통
