@@ -104,7 +104,8 @@ __Back-End__
 - SpringBoot, JPA를 활용한 CRUD 기능 구현
 - Spring Sequrity, jwt를 활용한 로그인, 인가(Admin, User) 기능 구현
 - QueryDSL을 활용해 관광지 검색 조건 구현(주소, 거리, 카테고리 등 여러 조건을 동적으로 추가)
-- 공공 데이터 API를 활용한 날씨 데이터(XML) 수집 및 전처리(DocumentBuilder) 출처: https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084
+- 공공 데이터 API를 활용한 날씨 데이터(XML) 수집 및 전처리(DocumentBuilder)
+-   출처: https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084
 - GPT를 활용한 태그 추천 기능 구현
 <br>
 
