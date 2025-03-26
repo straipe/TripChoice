@@ -15,19 +15,21 @@
 ### 1. 메인 페이지 
 <p>
   <img src="screenshots/MainView1.PNG" width="45%" height="300px"/>
-  <img src="screenshots/MainView2.PNG" width="45%" height="300px"/>
+  <img src="screenshots/AttractionLocationSearch.gif" width="45%" width="45%" height="300px"/>
 </p>
-<img src="screenshots/MainView3.PNG" width="45%" height="300px"/>
-<br>
+<p>
+  <img src="screenshots/MainView3.PNG" width="45%" height="300px"/>
+</p>
 
 ### 2. 관광지 지도 페이지  
 <br>
 
 __주소, 카테고리를 통한 검색__  
-<img src="screenshots/AttractionView2.PNG" width="90%"/>
+<img src="screenshots/AttractionAddressSearch.gif" width="90%"/>  
+<br>
 
 __1박 2일 플랜 설정__  
-<img src="screenshots/AttractionView6.PNG" width="90%"/>
+<img src="screenshots/PlanPost.gif" width="90%"/>
 
 <br>
   
